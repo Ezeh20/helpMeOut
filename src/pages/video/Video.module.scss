@@ -1,0 +1,337 @@
+.aka {
+    position: relative;
+
+    .main {
+        font-family: 'Sora', sans-serif;
+
+
+        .firstPart {
+            background-color: #fff;
+
+            .co {
+                padding: 3rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+
+
+                @media screen and (min-width:768px) {
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 60px 0;
+                }
+
+                .top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+
+                    @media screen and (min-width:768px) {
+                        width: 50%;
+                        margin-top: -6rem;
+                    }
+
+
+                    @media screen and (min-width:1200px) {
+                        .header {
+                            color: #141414;
+                            font-size: 45px;
+                        }
+                    }
+
+                    .tnt {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+
+                        @media screen and (min-width:768px) {
+                            gap: 64px;
+                        }
+
+                        .top_name {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 9px;
+
+                            .filename {
+                                display: flex;
+                                align-items: center;
+                                gap: 24px;
+
+                                .file {
+                                    font-size: 24px;
+                                    color: #413C6D;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        .emailContainer {
+                            display: flex;
+                            align-items: center;
+                            padding: 12px 24px;
+                            position: relative;
+                            height: 68px;
+                            width: 100%;
+                            gap: 1rem;
+                            background-color: #E7E7ED;
+                            border-radius: 16px;
+
+                            .input {
+                                background-color: transparent;
+
+                                border: none;
+                                outline: none;
+                                width: 100%;
+                                color: #434343CC;
+                                font-size: 16px;
+                            }
+
+                            .send {
+
+                                right: 1rem;
+                            }
+                        }
+
+                        .label {
+                            margin-bottom: 1rem;
+                        }
+
+                        .share {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+
+                            .shared {
+                                color: #08051E;
+                                font-weight: 600;
+                                font-size: 16px;
+                            }
+
+                            .socials {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #CFCFCF;
+
+                    @media screen and (min-width:768px) {
+                        width: 1px;
+                        height: 622px;
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    @media screen and (min-width:768px) {
+                        width: 50%;
+                    }
+
+                    .video {
+                        max-width: 100%;
+                    }
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .text_top {
+                            .head {
+                                font-size: 16px;
+                                margin-bottom: 16px;
+                                font-weight: 500;
+
+                                @media screen and (min-width:768px) {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+
+                            .trans {
+                                display: flex;
+                                font-size: 14px;
+                                gap: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .bo {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 48px 0;
+            align-items: center;
+
+            .text {
+                max-width: 653px;
+                text-align: center;
+                font-size: 24px;
+                color: #141414;
+                font-weight: 600;
+            }
+
+            .btn {
+                padding: 16px 32px;
+                outline: none;
+                border: none;
+                color: #F9F9FF;
+                background-color: #120B48;
+                border-radius: 8px;
+                font-size: 16px;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            .account {
+                color: #7E7E7E;
+                font-size: 24px;
+                text-align: center;
+                font-weight: 600;
+
+                .span {
+                    color: #120B48;
+                    text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .modal {
+        position: fixed;
+        inset: 0;
+        background: #00000052;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: #F2F4F7;
+            align-items: center;
+            padding: 100px 1rem;
+            text-align: center;
+            gap: 40px;
+            justify-content: center;
+            border-radius: 24px;
+
+            @media screen and (min-width: 768px) {
+                width: 598px;
+            }
+
+            .success {
+                width: 150px;
+                height: 150px;
+
+                @media screen and (min-width:768px) {
+                    width: initial;
+                    height: initial;
+
+                }
+
+            }
+
+            .email {
+                max-width: 348px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #08051E;
+
+                .span {
+                    color: #120B48;
+                }
+            }
+
+            .btm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+
+                @media screen and (min-width:768px) {
+                    max-width: 370px;
+                }
+
+                .later {
+                    font-size: 18px;
+                    color: #141414;
+                }
+
+                .btn {
+                    padding: 16px 32px;
+                    outline: none;
+                    border: none;
+                    color: #F9F9FF;
+                    background-color: #120B48;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    transition: all 300ms ease-in-out;
+
+                    @media screen and (min-width:768px) {
+                        max-width: 150px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+
+                .account {
+                    color: #7E7E7E;
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    .span {
+                        color: #120B48;
+                        text-decoration: underline;
+                        padding: 3rem 0 1rem;
+                    }
+                }
+            }
+
+            .close {
+                position: absolute;
+                top: 64px;
+                right: 64px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

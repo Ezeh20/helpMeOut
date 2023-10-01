@@ -1,0 +1,111 @@
+.section {
+    padding: 40px 0;
+
+    @media screen and (min-width:768px) {
+        padding: 80px 0;
+
+    }
+
+    .top {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .header {
+            font-family: 'Sora', sans-serif;
+            font-size: 24px;
+            color: #141414;
+            margin-bottom: .5rem;
+        }
+
+        .span {
+            color: #616163;
+        }
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 64px;
+
+            .header {
+                font-size: 40px;
+            }
+
+            .span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .items {
+            @extend .bottom;
+            flex-direction: column;
+            align-items: initial;
+
+            @media screen and (min-width:768px) {
+                justify-content: initial;
+            }
+
+            .single {
+                @extend .items;
+                gap: 1rem;
+
+                @media screen and (min-width:768px) {
+                    flex-direction: row;
+                    justify-content: initial;
+                    align-items: flex-start;
+                }
+
+                .img {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .content {
+                    @extend .single;
+                    gap: 10px;
+
+                    @media screen and (min-width:768px) {
+                        flex-direction: column;
+                    }
+
+
+                    .title {
+                        color: #1B233D;
+                    }
+
+                    .feat {
+                        color: #616163;
+                        max-width: 484px;
+
+                    }
+
+                    @media screen and (min-width:1200px) {
+                        .title {
+                            font-size: 28px;
+                        }
+
+                        .feat {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .imgContainer {
+            .img {
+                width: 100%;
+            }
+        }
+    }
+}

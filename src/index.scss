@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+.label {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #141414;
+}
+
+body {
+  // font-family: 'Inter', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  background: #F4F6F8;
+}
