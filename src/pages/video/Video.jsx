@@ -14,7 +14,7 @@ import Container from "../../components/container/Container";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import styles from "./Video.module.scss";
-import { constants } from "./constants";
+import { constant } from "./constants";
 import { useState } from "react";
 
 
@@ -97,7 +97,7 @@ const Video = () => {
                                         <img src={lang} alt="lang" className={styles.lang} />
                                     </div>
                                     <div className={styles.content}>
-                                        {constants.map((itm) => {
+                                        {constant.map((itm) => {
                                             return (
                                                 <div key={itm.id} className={styles.trans}>
                                                     <p className={styles.time}>{itm.time}</p>

@@ -1,4 +1,4 @@
-export const constants = [
+export const constant = [
     {
         id: 0,
         time: '0.01',
